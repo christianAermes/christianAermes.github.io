@@ -1,0 +1,137 @@
+img {
+  height: 300px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 6px 10px 35px 5px rgba(0,0,0,0.8);
+}
+
+/*###########################*/
+
+.CV_category {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 150px auto;
+/*  grid-column-gap: 50px;*/
+  background: #eaeaea;
+  border-radius: 15px;
+  padding: 10px 20px 30px 20px;
+  margin-bottom: 25px;
+  max-width: 800px;
+  box-shadow: 0 0 5px 5px inset #919191;
+  border: 2px solid #666666;
+}
+
+.CV_category h3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+
+.pointer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #eaeaea;
+  width: 200px;
+  max-width: 100px;
+  height: 40px;
+  position: relative; 
+  background: #00384f;
+  margin-top: -8px;
+} 
+
+.pointer:before { 
+  content: ""; 
+  position: absolute; 
+  right: -20px; 
+  bottom: 0; 
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid #00384f; 
+  border-top: 20px solid transparent; 
+  border-bottom: 20px solid transparent; 
+}
+
+.pointer p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.description:before {
+  height: 30px;
+  width: 30px;
+  background: #00384f;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  left: -22px;
+  top: -5px;
+}
+
+
+.description {
+  text-align: left;
+  padding-left: 15px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  border-left: 15px solid #c9c7c7;
+  position: relative;
+}
+
+.description p {
+  font-size: 15px;
+}
+
+.description h4 {
+  margin-top: 2px;
+  margin-bottom: -12px;
+}
+
+.description h5 {
+  margin-bottom: -6px;
+}
+
+.description a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#knowledge .description {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*###########################*/
+.logo {
+  height: 40px;
+  box-shadow: none;
+  border: none;
+  opacity: 1;
+}
+
+#FindOutMore a {
+  text-align: center;
+}
+
+.SocialMediaLink {
+  position: relative;
+  left: -80px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.SocialMediaLink:hover {
+  opacity: 0.7;
+}
+
+.SocialMediaLink span {
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  top: 12.5px;
+  color: #181818
+}

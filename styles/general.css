@@ -1,0 +1,110 @@
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: arial;
+  background: #717171;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+/*  grid-template-rows: 120px 50px;*/
+  background: black;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+.profileImg {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  z-index: 2;
+  text-align: center;
+}
+
+.profileImg img {
+  height: 130px;
+  margin: 10px;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+.info {
+  grid-column-start: 2;
+  color: white;
+  text-align: center;
+}
+
+.menu {
+  grid-column-start: 2;
+  background: black;
+  z-index: 9999;
+  border: none;
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+li a {
+  height: 27px;
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background: black;
+}
+
+li a:hover {
+  background: #717171;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 10%;
+  padding-top: 175px;
+  text-align: center;
+  margin-bottom: -35px;
+}
+
+p {
+  font-size: 10px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  height: 35px;
+  margin-top: 35px;
+  background: black;
+  color: white;
+  text-align: right;
+  width: 100%;
+  padding: 1px;
+  padding-right: 20px;
+}

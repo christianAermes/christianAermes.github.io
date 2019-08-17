@@ -1,0 +1,29 @@
+.projectPreview {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 6px 10px 35px 5px rgba(0,0,0,0.8);
+  background: rgba(66, 134, 244, 0.25);
+}
+
+.projectPreview p {
+  font-size: 20px;
+}
+
+.projectPreview img {
+  height: 250px;
+  margin: 10px;
+/*  border: 1px solid black;*/
+  border-radius: 10px;
+}
+
+.projectPreview:hover {
+  opacity: 0.7;
+/*
+  filter: opacity(75%);
+  background: red;
+*/
+}
