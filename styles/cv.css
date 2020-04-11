@@ -1,0 +1,51 @@
+.cv-category {
+  grid-column-start: 1;
+  justify-self: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px #000;
+  padding: 20px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 80%;
+  max-width: 800px;
+  color: #000;
+}
+
+
+.cv-category h2 {
+  color: #000;
+/*  margin-bottom: -5px;*/
+}
+
+.cv-category hr {
+  border-top: 3px solid #006DD2;
+  margin-bottom: 20px;
+}
+
+.cv-point {
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 7px .1px inset #bbb;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.cv-point a {
+  text-decoration: none;
+  color: black;
+}
+
+.publications h3 {
+  font-size: 1.3em;
+}
+
+.publications h4 {
+  font-size: 1.2em;
+}
+.publications h5 {
+  font-size: 1.1em;
+  font-style: italic;
+}
+.publications p {
+  font-size: 1em;
+}

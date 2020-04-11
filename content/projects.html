@@ -1,0 +1,97 @@
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <h1>Projects</h1>
+    
+    <a href="#" class="project" id="BlackHoleSimulation">
+      <img src="images/BlackholeSimulation.png" alt="BlackholeSimulation"/>
+      <div class="description">
+        <h2>Blackhole Simulation</h2>
+        <p></p>
+      </div>
+    </a>
+
+    <a href="#" class="project" id="VoiceRecognitionTranslator">
+      <img src="images/VoiceRecognitionTranslator.png" alt="VoiceRecognitionTranslator"/>
+      <div class="description">
+        <h2>Voice Recognition Translator</h2>
+        <p></p>
+      </div>
+    </a>
+
+    <a href="#" class="project" id="FlappyBird">
+      <img src="images/FlappyBird.png" alt="FlappyBird"/>
+      <div class="description">
+        <h2>Flappy-Bird</h2>
+        <p></p>
+      </div>
+    </a>
+
+    <a href="#" class="project" id="DeviceSchedule">
+      <img src="images/DeviceSchedule.png" alt="DeviceSchedule"/>
+      <div class="description">
+        <h2>Device Schedule</h2>
+        <p></p>
+      </div>
+    </a>
+
+    <a href="#" class="project" id="DrawingProgram">
+      <img src="images/DrawingProgram.png" alt="DrawingProgram"/>
+      <div class="description">
+        <h2>Drawing Program</h2>
+        <p></p>
+      </div>
+    </a>
+
+    <a href="#" class="project" id="mytube">
+      <img src="images/MyTube.png" alt="mytube"/>
+      <div class="description">
+        <h2>MyTube</h2>
+        <p></p>
+      </div>
+    </a>
+    
+    <a href="#" class="project" id="campus-board">
+      <img src="images/CampusTraining.png" alt="campus-board"/>
+      <div class="description">
+        <h2>CampusTraining</h2>
+        <p></p>
+      </div>
+    </a>
+
+    <a href="#" class="project" id="Wikipedia-Viewer">
+      <img src="images/WikipediaViewer.png" alt="Wikipedia-Viewer"/>
+      <div class="description">
+        <h2>Wikipedia Viewer</h2>
+        <p></p>
+      </div>
+    </a>
+    
+    <script>
+      $(document).ready(()=>{
+        let username = "christianAermes"
+        let url = "https://api.github.com/users/"+username+"/repos"
+        $.getJSON(url, (data)=>{
+          let repos = []
+          for (let d of data) {
+            repos.push({id: d.name, 
+                        description: d.description, 
+                        url: d.html_url
+                       })
+          }
+          for (let repo of repos) {
+            let descriptionBox = $("#"+repo.id+" .description p")
+            let projectBox = $("#"+repo.id)
+            if (descriptionBox.length) {
+              descriptionBox.html(repo.description)
+              projectBox.attr("href", repo.url)
+              projectBox.attr("target", "blank")
+            }
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
