@@ -1,6 +1,8 @@
 
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -43,48 +45,106 @@ h1 {
 }
 
 nav {
-  grid-column-start: 1;
   z-index: 99;
   display: grid;
-  grid-template-rows: auto auto auto;
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100px;
-  min-height: 100%;
   background: rgba(51,51,51,0.85);
   justify-items: center;
   align-items: center;
 }
 
-
-
-nav a:hover {
-  color: #757575;
-}
 nav a {
+  display: block;
   text-decoration: none !important;
   color: #ffffff;
   text-align: center;
 }
 
-nav a i {
-  font-size: 45px;
+nav a:hover {
+  color: #757575;
 }
-
 
 .active {
   color: #757575;
 }
 
-main {
-  z-index: 99;
-  grid-column-start: 2;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: minmax(12em, 0.6fr) auto;
-  justify-items: center;
-  justify-content: center;
+@media (orientation: landscape) {
+  nav {
+    grid-column-start: 1;
+    grid-template-rows: repeat(4, 25%);
+    min-width: 100px;
+    min-height: 100%;
+  }
+
+  nav a i {
+    font-size: 45px;
+  }
+  
+
+  main {
+    z-index: 99;
+    grid-column-start: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(12em, 0.6fr) auto;
+    justify-items: center;
+    justify-content: center;
+  }
 }
 
+@media (orientation: portrait) {
+  #container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh auto;
+    min-height: 100%;
+  }
+  nav {
+    grid-row-start: 1;
+/*    position: absolute;*/
+    position: fixed;
+    z-index: 99;
+    bottom: auto;
+    min-width: 100%;
+    min-height: 10vh;/*100px*/
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 10vh; /*100px*/
+  }
+
+  nav a i {
+    font-size: 8vw;
+  }
+  
+  nav a p {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 8vw;
+  }
+  
+  main {
+    z-index: 98;
+    grid-column-start: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(12em, 0.6fr) auto;
+    justify-items: center;
+    justify-content: center;
+  }
+  main {
+    z-index: 98;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(15vh, 100px) auto;
+  }
+
+}

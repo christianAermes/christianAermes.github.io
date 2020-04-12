@@ -1,3 +1,47 @@
+
+@media (orientation: landscape) {
+  
+}
+
+@media (orientation: portrait) {
+  .cv-category h2 {
+    font-size: 6vw;
+  }
+  .cv-point h3 {
+    font-size: 5vw;
+  }
+
+  .cv-point h4 {
+    font-size: 4.5vw;
+  }
+
+  .cv-point h5 {
+    font-size: 4vw;
+  }
+
+  .cv-point p {
+    font-size: 3vw;
+  }
+  
+  /*CV Publications*/
+  .publications h3 {
+    font-size: 1.3em;
+  }
+
+  .publications h4 {
+    font-size: 1.2em;
+  }
+  .publications h5 {
+    font-size: 1.1em;
+    font-style: italic;
+  }
+  .publications p {
+    font-size: 1em;
+  }
+}
+
+
+
 .cv-category {
   grid-column-start: 1;
   justify-self: center;
@@ -26,6 +70,8 @@
 .cv-point {
   margin-bottom: 10px;
   box-shadow: 0px 0px 7px .1px inset #bbb;
+  -moz-box-shadow: 0px 0px 7px .1px inset #bbb;
+  -webkit-box-shadow: 0px 0px 7px .1px inset #bbb;
   border-radius: 7px;
   padding: 20px;
 }
