@@ -1,15 +1,42 @@
 
-.project {
-  display: grid;
-  width: 80%;
-  max-width: 500px;
-  margin-bottom: 40px;
-  box-shadow: 0px 0px 40px #000;
-  background: none;
-  border-radius: 10px;
-  text-decoration: none !important;
-  color: #000;
+@media (orientation: landscape) {
+  .project {
+    display: grid;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 40px #000;
+    background: none;
+    border-radius: 10px;
+    text-decoration: none !important;
+    color: #000;
+  }
 }
+
+@media (orientation: portrait) {
+  .project {
+    display: grid;
+    width: 80%;
+/*    max-width: 500px;*/
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 40px #000;
+    background: none;
+    border-radius: 10px;
+    text-decoration: none !important;
+    color: #000;
+  }
+  
+  .project .description p {
+    font-size: 3vw;
+  }
+  .project .description h2 {
+    font-size: 3.5vw;
+  }
+}
+
+
+
+
 
 .project img {
   display: block;
