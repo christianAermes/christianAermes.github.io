@@ -1,6 +1,36 @@
+.icon-climbing {
+  -webkit-mask: url("../images/Hobbys/Climbing.svg");
+  mask: url("../images/Hobbys/Climbing.svg");
+}
+
+.icon-coding {
+  -webkit-mask: url("../images/Hobbys/Coding.svg");
+  mask: url("../images/Hobbys/Coding.svg");
+}
+
+.icon-reading {
+  -webkit-mask: url("../images/Hobbys/Reading.svg");
+  mask: url("../images/Hobbys/Reading.svg");
+}
+
+.icon-drawing {
+  -webkit-mask: url("../images/Hobbys/Drawing.svg");
+  mask: url("../images/Hobbys/Drawing.svg");
+}
+
 
 @media (orientation: landscape) {
   
+  
+  .icon {
+    display: block;
+    background: #333333;
+    width: 70px;
+    height: 70px;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    
+  }
 }
 
 @media (orientation: portrait) {
@@ -37,6 +67,17 @@
   }
   .publications p {
     font-size: 1em;
+  }
+  
+  /* Hobbies */
+  .icon {
+    display: block;
+    background: #333333;
+    width: 10vw;
+    height: 10vw;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    
   }
 }
 
@@ -95,3 +136,63 @@
 .publications p {
   font-size: 1em;
 }
+
+/****************************************************/
+
+
+
+
+
+.hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-auto-flow: dense;
+  grid-row-gap: 10px;
+/*  align-items: center;*/
+  justify-items: center;
+}
+
+.hobbies p {
+  font-weight: bold;
+  color: #333333;
+}
+
+.hobby {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  justify-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
