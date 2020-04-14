@@ -37,16 +37,6 @@ $(document).ready(function(){
         $("#gradient-transition").addClass(currentBg)
 
         $("#container").removeClass()
-//        const newBg = "";
-//        if (id === "homeBtn") {
-//          newBg = "green-background"
-//        } else if (id === "projectsBtn") {
-//          newBg = "blue-background"
-//        } else if (id === "cvBtn") {
-//          newBg = "purple-background"
-//        } else if (id === "contactBtn") {
-//          newBg = "red-background"
-//        }
         
         const newBg = id==="homeBtn" ? "green-background" : 
                       id==="projectsBtn" ? "blue-background" :
@@ -59,13 +49,7 @@ $(document).ready(function(){
         $("#gradient-transition").fadeOut(1000, function() {
           $("#gradient-transition").removeClass()
           $("#gradient-transition").addClass(newBg)
-//          $("#gradient-transition").fadeIn(1)
         })
-//        $("#gradient-transition").fadeOut(1000, ()=>{
-//          $("#gradient-transition").removeClass()
-//          $("#gradient-transition").addClass(newBg)
-//          $("#gradient-transition").fadeIn(1)
-//        })
 
       } catch (err) {
         console.log("not found")

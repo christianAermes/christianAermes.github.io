@@ -49,11 +49,11 @@ h2 {
 @media (orientation: portrait) {
   .home-screen {
     width: 80vw;
-    height: 80%;
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
     justify-items: center;
     justify-content: center;
   }
@@ -71,10 +71,12 @@ h2 {
   h2 {
     grid-row-start: 2;
     font-size: 6vw;
+    margin: 5vw 0;
   }
   
   #home-description {
     font-size: 3vw;
+    margin: 5vw 0;
   }
   
   

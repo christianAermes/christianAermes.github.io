@@ -36,7 +36,6 @@ form, .form-elements {
 .btn-success {
   justify-self: center;
   align-self: center;
-/*  font-size: 4vw;*/
 }
 .group {
   display: block;
@@ -44,12 +43,10 @@ form, .form-elements {
 }
 label {
   font-weight: bold;
-/*  font-size: 3vw;*/
 }
 
 textarea, input {
   display: block;
-/*  font-size: 2.5vw;*/
   width: 100%;
   border-radius: 3px;
   border: 1px solid #aaa;
